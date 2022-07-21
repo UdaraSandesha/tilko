@@ -80,6 +80,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         excludedEndPoints.add("/api/user/forgot/*");
         excludedEndPoints.add("/api/user/reset/password");
         excludedEndPoints.add("/login/oauth/*");
+        excludedEndPoints.add("/simpleAuth/**");
 
         return excludedEndPoints.toArray(new String[0]);
     }
